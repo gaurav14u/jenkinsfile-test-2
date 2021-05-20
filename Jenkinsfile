@@ -8,7 +8,7 @@ pipeline {
         stage('Example') {
             steps {
                 script{
-                  if(${params.INSTANCENAME} == 'One'){
+                  if(params.INSTANCENAME == 'One'){
                     echo "INSTANCENAME ${params.INSTANCENAME}"
                   }
                   echo "ACTION: ${params.ACTION}"
